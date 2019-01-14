@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>VRIKSHAN</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!--<link href="https://fonts.googleapis.com/css?family=Mr+Dafoe" rel="stylesheet">-->
+	<link rel="stylesheet" type="text/css" href="magnific-popup.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script></head>
+  
+
+   <style type="text/css">
+   .info
+    {
+   	background-color: #c9c1ac;
+   }
+   	body
+   	 {
+   		
+   		color: #c9c1ac;
+      background: url(plants/6.jpg)center/cover fixed no-repeat;
+   	}
+
+
+    .primary-color
+     {
+    	color: #d3325f;
+    }
+
+    .info h2
+    {
+    	word-spacing: 0.6rem;
+    }
+
+    .info a
+    {
+    	transition: color 2s ease-in-out;
+    }
+
+    .info a:hover
+     {
+    	color: #242424;
+    }
+
+
+
+
+
+    #header {
+    	min-height: calc(100vh - 94px);
+    	background:linear-gradient(to right,rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url(green2.jpg);
+    	background-position: center;
+    	background-size: cover;
+    	background-repeat: no-repeat;
+    	background-attachment: fixed;
+        position: relative;
+    }
+    .height-90 
+    {
+    	min-height: calc(100vh - 94px);
+        
+    }
+    .banner h1
+     {
+       border-top: 6px dotted #c9c1ac;
+        border-bottom: 6px dotted #c9c1ac;
+         animation: fromLeft;
+         animation-duration: 4s;
+         animation-delay: 1s;
+         opacity: 0;
+         animation-fill-mode: forwards;
+    }
+
+    @keyframes fromLeft 
+    {
+
+
+    	0%{
+    		transform: translateX(-100px);
+    		opacity: 0;
+    	}
+    	50%{
+    		transform: translateX(30px);
+    	}
+    	100%{
+    		transform: translateX(0);
+    		opacity: 1;
+    	}
+    }
+    .main-btn 
+    {
+    	color: #d3325f;
+    	font-size: 2rem;
+    	border: 2px solid #d3325f;
+    	transition: all 1s ease-in-out;
+        background-color: #7FFFD4;
+    }
+
+    .main-btn:hover
+    {
+    	color: #242424;
+    	border: 2px solid #c9c1ac;
+    	background: #0000FF;
+
+    }
+
+    .sushi-btn 
+    {
+    	animation: fromRight;
+    	animation-duration: 4s;
+         animation-delay: 1s;
+         opacity: 0;
+         animation-fill-mode: forwards;
+    }
+
+    @keyframes fromRight 
+    {
+
+
+    	0%{
+    		transform: translateX(100px);
+    		opacity: 0;
+    	}
+    	50%{
+    		transform: translateX(-30px);
+    	}
+    	100%{
+    		transform: translateX(0);
+    		opacity: 1;
+    	}
+    }
+    .header-link 
+    {
+    	position: absolute;
+    	display: inline-block;
+    	bottom: 5%;
+    	left: 50%;
+    	background:#c9c1ac;
+    	border-radius: 10px;
+    	transition: all 2s ease;
+    	animation: fromBottom;
+    	animation-duration: 4s;
+    	animation-iteration-count: infinite;
+    }
+    .header-link:hover
+    {
+    	color: #242424;
+    }
+
+    @keyframes fromBottom 
+    {
+    	0%{
+    		transform: translateY(-10px);
+    	}
+    	50%{
+    		transform: translateY(10px);
+    	}
+    	100%{
+    		transform: translateY(-10px);
+    	}
+    }
+    /*navbar begins*/
+    
+    .navbar-brand
+    {
+      font-size: 30px;
+      transition: all 1s ease;
+    }
+    .navbar-brand:hover
+    {
+      color: #242424;
+
+    }
+
+    .navbar
+    {
+      background: #c9c1ac;
+      padding:  20px 20px;
+      transition: all 1s ease
+    }
+
+    .navbar-background
+    {
+      padding: 5px 20px;
+
+    }
+    .nav-link
+    {
+      color: #242424;
+      text-decoration: none;
+      transition: all 2s ease;
+      font-size: 23px;
+    }
+    .nav-link:hover
+    {
+      color: #d3325f;
+    }
+    .nav-btn
+    {
+       background:transparent;
+       color: #d3325f;
+       border: 2px solid #d3325f;
+       transition: all 2s ease;
+       font-size: 23px;
+    }
+    .nav-btn:hover
+    {
+       color: #242424;
+       border: 2px solid #242424;
+       transform: rotate(10deg);
+    }
+
+
+    .toggler-btn
+    {
+      border: 2px solid #d3325f;
+      padding: 5px;
+      transition: all 2s ease;
+    }
+
+    .bar
+    {
+      width: 30px;
+      height: 3px;
+      margin: 5px;
+      background: #d3325f ;
+      transition: all 0.5s ease;
+    }
+
+    .change .bar1
+    {
+      transform: rotate(-45deg) translate(-5px,6px);
+    }
+     .change .bar2
+    {
+      opacity: 0;
+    }
+     .change .bar3
+    {
+      transform: rotate(45deg) translate(-5px,-8px);
+    }
+    /*navbar ends*/
+    .item-container
+    {
+      position: relative;
+      /*for the link*/
+     overflow: hidden;
+      transition: all 2s ease;
+    }
+    .item-img
+    {
+      transition: all 2s ease;
+    }
+
+    .item-container:hover .item-img
+    {
+      transform: scale(1.2);
+      opacity: 0.5;
+    }
+    .agt
+    {
+      font-size: 60px;
+    }
+    .bsd
+    {
+      background-color: black;
+    }
+    .item-link 
+    {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      color: #d3325f;
+      font-size: 2rem;
+      border-top: 3px solid #d3325f;
+      border-bottom: 3px solid #d3325f;
+      transition: all 2s ease;
+      opacity: 0;
+    }
+    .item-container:hover .item-link
+    {
+      opacity: 1;
+    }
+
+    .item-link:hover
+    {
+       color: #c9c1ac;
+       border: 3px solid #c9c1ac;
+       background: #c9c1ac;
+       color: #242424;
+    }
+
+    .item-container:hover
+    {
+      outline: 10px solid #d3325f;
+      outline-offset: 0.8rem;
+    }
+    .anv
+    {
+      font-size: 25px;
+      color:#242424;
+      background-color: #c9c1ac;
+      padding: 10px;
+      word-spacing: 1rem;
+    }
+    .tad {
+      word-spacing: 1rem;
+      color: #FFF68F;
+    }
+    .about-pictures {
+      position: relative;
+    }
+    .about-image 
+    {
+      position: absolute;
+      width: 150px;
+      opacity: 0.9;
+      transition: all 2s ease;
+    }
+
+    .img-1
+    {
+      left: 0%;
+      top: 0%;
+    }
+   .img-2
+    {
+      left: 20%;
+      top: 20%;
+      z-index: 10;
+    }
+    .img-3
+    {
+      left: 40%;
+      top: 45%;
+      z-index: 20;
+    }
+    .img-4
+    {
+      left: 40%;
+      top: 0%;
+    }
+    .img-5
+    {
+      left: 0%;
+      top: 45%;
+  
+    }
+    
+    .about-image:hover
+    {
+      outline: 10px solid #d3325f;
+      outline-offset: 0.8rem;
+      transform: scale(2.5);
+      z-index: 30;
+      opacity: 1;
+    }
+
+    .about-pictures:hover .about-image:not(:hover)
+    {
+       opacity: 0.5;
+    }
+
+
+    .review-item
+    {
+      background:rgba(255,255,255,0.7);
+      clip-path: polygon(5% 0,100% 0,90% 100%,0 100%);
+    }
+
+    .review-img
+    {
+      width: 150px;
+    }
+    
+    .str
+    {
+      font-size: 13px;
+      transform: translateX(-100px);
+    }
+
+
+    .team-icons a
+    {
+      color: #3b5998;
+      transition: all 2s ease-in-out;
+    }
+
+   .team-icons a:hover
+   {
+    color: #242424;
+    transform: translateY(-5px);
+   }
+
+
+  #back-to-top
+  {
+    background: #c9c1ac;
+    border-radius: 10px;
+    display: inline-block;
+  }
+
+  .scrollTop
+  {
+    position: fixed;
+    bottom: 5px;
+    right: 10px;
+    font-size: 20px;
+  }
+
+
+
+
+
+  /*toggler button not styled*/
+   </style>
+
+   <script type="text/javascript">
+    /*eslint-env jquery*/
+   	$(document).ready(function()
+{
+
+
+  $('.navbar-toggler').click(function(){
+    
+    $('.navbar-toggler').toggleClass('change');
+
+
+
+  })
+
+  //sticky navbar and less padding
+   $(window).scroll(function(){
+     let pos = $(this).scrollTop();
+     if(pos>=718)
+     {
+      $('.navbar').addClass('navbar-background');
+      $('.navbar').addClass('fixed-top');
+     }
+     else
+     {
+      $('.navbar').removeClass('navbar-background');
+      $('.navbar').removeClass('fixed-top');
+     }
+
+    
+
+   })
+
+   $('nav-item a').click(function(link){
+
+    link.preventDefault();
+    let target = $(this).attr('href');
+
+    $('html,body').animate(function(){
+       scrollTop:$(target).offset().top -25
+
+    },3000)
+
+
+   })
+
+
+
+
+//    $(document).ready(function(){
+      
+     // function fun(th){
+       
+  
+
+
+
+   $("#header, .info").ripples({
+  dropRadius: 25,
+  perturbance: 0.6,
+  interactive: true
+});
+
+$('.parent-container').magnificPopup({
+  delegate: 'a', // child items selector, by clicking on it popup will open
+  type: 'image',
+  gallery:{
+    enabled:true
+  }
+  // other options
+});
+
+});
+
+   </script>
+<body>
+	<div class="container-fluid info p-3" id="top-icons">
+		<div class="row">
+			<div class="col d-flex justify-content-between align-items-baseline flex-wrap">
+				<div class="info-icons p-2">
+					<a href="#" class="mr-2 primary-color"><i class="fa fa-facebook" style="font-size: 25px;"></i></a>
+					<a href="#" class="mr-2 primary-color"><i class="fa fa-twitter"  style="font-size: 25px;"></i></a>
+					<a href="#" class="mr-2 primary-color"><i class="fa fa-instagram"  style="font-size: 25px;"></i></a>
+					<a href="#" class="mr-2 primary-color"><i class="fa fa-yelp"  style="font-size: 25px;"></i></a>
+				</div>
+				<h2 class="primary-color p-2 text-capitalize">Reduce Your Footprint and Go Green</h2>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<header id="header">
+		<div class="container">
+			<div class="row height-90 align-items-center justify-content-center">
+				<div class="col">
+					<div class="banner text-center">
+						<h1 class="display-1 text-capitalize w-50 mx-auto" >
+							<small style="color: #473C8B;">Vrikshan</small> <strong class="primary-color agt">Make_India_Green_Initiative</strong>
+						</h1>
+						<a href="http://localhost/startup/log.php" class="btn main-btn sushi-btn my-4 text-capitalize">Log In</a>
+						<a href="http://localhost/startup/sign_up.php" class="btn main-btn sushi-btn my-4 text-capitalize">Sign Up</a>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+
+
+		<a href="#special-items" class="btn header-link primary-color"><button>Scroll Down</button></i></p></a>
+	</header>
+
+  <!--navbar-->
+
+<style type="text/css">
+  
+  .new_nav{
+    position: sticky;
+    top: 0px;
+    z-index: 9999;
+  }
+
+</style>
+
+  <nav class="navbar navbar-expand-lg new_nav">
+    <a href="#" class="navbar-brand text-uppercase primary-color">Dont  panic go organic</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
+      <div class="toggler-btn">
+        <div class="bar bar1"></div>
+        <div class="bar bar2"></div>
+        <div class="bar bar3"></div>
+
+
+
+      </div>
+
+
+
+    </button>
+    <!--links-->
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+            <a href="#" class="nav-link text-capitalize">HOME</a> 
+        </li>
+         <li class="nav-item">
+            <a href="#about" class="nav-link text-capitalize">ABOUT US</a> 
+        </li>
+         <li class="nav-item">
+            <a href="#menu" class="nav-link text-capitalize">MISSION</a> 
+        </li>
+         <li class="nav-item">
+            <a href="#" class="nav-link text-capitalize">ACTIVITIES</a> 
+        </li>
+         <li class="nav-item">
+            <a href="#" class="nav-link text-capitalize">MEDIA</a> 
+        </li>
+         <li class="nav-item">
+            <a href="#team" class="nav-link text-capitalize">CONTACT US</a> 
+        </li>
+
+
+      </ul>
+       
+       <form class="form-inline d-none d-lg-block mr-5">
+         <button class="btn nav-btn text-capitalize" type="button">Order now</button>
+
+
+
+
+       </form>
+
+
+
+
+    </div>
+     
+
+
+  </nav>
+  <!--navbar ends-->
+	<!--menu items-->
+	
+<div class="enlarged" style="display: none;position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; background-color: rgba(220,220,220,0.7); border: 2px solid blue; z-index: 10000;">
+    <!--div style="display: block; width: "></div-->
+    <div class="enlarged_img" style="background-image: url('plants/6.jpg'); background-repeat: no-repeat;background-size: 100% 100%; width: 80%; height: 100%; position: relative; align-items: center; align-self: center; left: 10%;" class="img-fluid img-thumbnail item-img">
+    </div>
+    <div class="close" style="display: block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 50px;
+    height: 50px;
+    background-image: url('https://tse4.mm.bing.net/th?id=OIP.RBsg-JOtM93jIFjALniysgHaHa&pid=15.1&P=0&w=300&h=300');
+    background-color: #f3f3f3;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50px;
+    z-index: 11;"></div>
+
+<div class="right_" style="display: block;
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    width: 50px;
+    height: 50px;
+    background-image: url('right.jpg');
+    background-color: #f3f3f3;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50px;
+    z-index: 11;"></div>
+
+<div class="left_" style="display: block;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    width: 50px;
+    height: 50px;
+    background-image: url('left.jpg');
+    background-color: #f3f3f3;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50px;
+    z-index: 11;">      
+</div>
+
+
+
+
+
+</div>
+  <section class="py-5" id="special-items">
+		<div class="container my-5">
+			<div class="row parent-container">
+        <!--menu item-->
+                 <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+                 	<div class="item-container">
+                 		<img src="plants/1.jpg" style="height: 250px; width: 100%;" class="img-fluid img-thumbnail item-img" alt="menu item">
+                    
+                          <a  class="en_fun">
+                          	<h1 class="text-uppercase text-center item-link px-3 bsd">menu item</h1>
+                          </a> 
+
+
+                 	</div>
+
+<script type="text/javascript">
+  /*eslint-env jquery*/
+  $(document).ready(function(){
+        console.log("khasjf");
+
+var PICS = ["url(plants/1.jpg)","url(plants/2.jpg)","url(fruits/8.jpg)","url(fruits/7.jpg)","url(flowers/16.jpg)","url(garden.jpg)"];
+var a;      
+      $(".en_fun").click(function(){
+        console.log("url("+$(this).parent().children("img").attr("src")+")");
+        $(".enlarged").css("display","block");
+        $(".enlarged").children(".enlarged_img").css("background-image","url("+$(this).parent().children("img").attr("src")+")");      
+      a = PICS.indexOf($(".enlarged").children(".enlarged_img").css("background-image"));
+      });
+  
+      $(".close").click(function(){
+        console.log("die");
+        $(this).parent().css("display","none");
+      });
+      $(".right_").click(function(){
+        console.log("hi");
+        a++;
+        if (a==6) {a=0;}
+        $(".enlarged").children(".enlarged_img").css("background-image",PICS[a]);
+        console.log(PICS[a]);
+        
+      });
+      $(".left_").click(function(){
+        console.log("hello");
+        a--;
+        if (a==-1) {a=5;}
+        console.log(PICS[a]);
+$(".enlarged").children(".enlarged_img").css("background-image",PICS[a]);
+      });
+    });
+
+
+
+</script>
+
+                 </div>
+                  <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+                      <div class="item-container">
+                 		<img src="plants/2.jpg" style="height: 250px; width: 100%;" class="img-fluid img-thumbnail item-img" alt="menu item">
+                          <div class="en_fun">
+                          	<h1 class="text-uppercase text-center item-link px-3 bsd ">menu item</h1>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+                      <div class="item-container">
+                    <img src="fruits/8.jpg" style="height: 250px; width:100%;" class="img-fluid img-thumbnail item-img" alt="menu item">
+                          <div class="en_fun">
+                            <h1 class="text-uppercase text-center item-link px-3 bsd">menu item</h1>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+                      <div class="item-container">
+                    <img src="fruits/7.jpg" style="height: 250px; width: 100%;" class="img-fluid img-thumbnail item-img" alt="menu item">
+                          <div class="en_fun">
+                            <h1 class="text-uppercase text-center item-link px-3 bsd">menu item</h1>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+                      <div class="item-container">
+                    <img src="flowers/16.jpg" style="height: 250px; width: 100%;" class="img-fluid img-thumbnail item-img" alt="menu item">
+                          <div class="en_fun">
+                            <h1 class="text-uppercase text-center item-link px-3 bsd">menu item</h1>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+                      <div class="item-container">
+                    <img src="garden.jpg" style="height: 250px; width: 100%;" class="img-fluid img-thumbnail item-img" alt="menu item">
+                          <div class="en_fun">
+                            <h1 class="text-uppercase text-center item-link px-3 bsd">menu item</h1>
+                          </div>
+                      </div>
+                  </div>
+            </div>
+
+
+		</div>
+
+
+
+
+
+
+	</section>
+
+
+
+
+
+
+  <section id="menu" class="py-5 my-6">
+    <div class="container">
+      
+                    <h1 class="primary-color text-uppercase tad"> our mission</h1>
+           <p class="primary-color text-uppercase anv">
+To provide schools with the tools, training and ongoing support they need to create a <strong>CULTURE OF CONSERVATION</strong> and natural resource stewardship within their community.</p>
+
+<h1 class="primary-color text-uppercase tad">Our Goals Are:</h1>
+<p class="primary-color text-uppercase anv">To conserve and protect natural resources for future generations, and to protect human health through environmental stewardship.</p>
+
+<h1 class="primary-color text-uppercase tad">Our Vision Is:</h1>
+<p class="primary-color text-uppercase anv">A world where natural resources are equitably available, and all children are healthier as a result of living the principles of the Go Green Initiative.</p>
+
+
+
+
+
+           </div>
+          </div>
+
+          
+
+
+
+        </div>
+
+
+    </div>
+   </div>
+
+
+
+  </section>
+
+
+    <section id="about" class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 my-4">
+            <h1 class="text-uppercase dispaly-3">about us</h1>
+            <h2 class="text-muted">dkdfjsdfhsdkjfhsdjfhsdfdh lskhdlsfsldhfsldfhlsdfhlsddfhsdlfkhdslf sd;dfjsldlfsjdkdfjs;djf;sdfj;sdjf;</h2>
+            <a href="" class="btn main-btn my-4 text-capitalize">Learn More</a>
+          </div>
+          <div class="col-md-6 about-pictures my-4 d-none d-lg-block">
+            <img src="ac5.jpg" class="img-thumbnail about-image img-1" alt="" >
+            <img src="ac2.jpg" class="img-thumbnail about-image img-2" alt="" >
+            <img src="ac4.jpg" class="img-thumbnail about-image img-3" alt="" >
+            <img src="ashish2.jpg" class="img-thumbnail about-image img-4" alt="" >
+            <img src="ac6.jpg" class="img-thumbnail about-image img-5" alt="" >
+
+
+
+
+          </div>
+        </div>
+      </div>
+
+
+
+    </section>
+
+<style type="text/css">
+  .myfont
+  {
+    font-size: 20px;
+  }
+</style>
+
+
+
+
+
+
+
+      <section id="reviews" class="py-5">
+        <div id="slider" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-10 mx-auto d-flex justify-content-between review-item py-3">
+                    <div class="align-self-center ml-3">
+                      <img src="q.jpeg" class="rounded-circle review-img">
+                    </div>
+                    <div class="review-text py-5">
+                      <h2 class="text-capitalize mb-3 primary-color myfont">Marlee Martin</h2>
+                      <p class="lead text-muted str" >THE  EARTH  DOES  NOT  BELONG  TO  US,  WE  BELONG  TO  EARTH</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+
+
+            </div>
+            
+        <div class="carousel-item">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-10 mx-auto d-flex justify-content-between review-item py-3">
+                    <div class="align-self-center ml-3">
+                      <img src="q2.jpeg" class="rounded-circle review-img">
+                    </div>
+                    <div class="review-text py-5">
+                      <h2 class="text-capitalize mb-3 primary-color myfont">Sidney Sheldon</h2>
+                      <p class="lead text-muted str">TRY TO LEAVE THE EARTH A BETTER PLACE THAN WHEN YOU ARRIVED</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+
+
+            </div>
+            
+       <div class="carousel-item">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-10 mx-auto d-flex justify-content-between review-item py-3">
+                    <div class="align-self-center ml-3">
+                      <img src="q3.jpg" class="rounded-circle review-img">
+                    </div>
+                    <div class="review-text py-5">
+                      <h2 class="text-capitalize mb-3 primary-color myfont">Robert Swan</h2>
+                      <p class="lead text-muted str">THE GREATEST THREAT TO SOCIETY IS THE BELIEF THAT SOMEONE ELSE WILL SAVE IT</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+
+
+            </div>
+            
+
+
+
+
+        </div>
+      <a href="#slider" class="carousel-control-prev" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a> 
+
+      <a href="#slider" class="carousel-control-next" role="button" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+
+
+
+      </div>
+
+      </section>
+
+
+      <section id="team" class="py-5">
+         <div class="container">
+           <div class="row">
+             <div class="col-9 col-sm-6 col-lg-4 mx-auto my-4">
+              <div class="card">
+                <img src="ashish3.jpg" class="card-img-top" alt="" >
+                <div class="card-body">
+                  <div class="card-title">
+                    <h1 class="text-capitalize" >Ashish Jaiswal</h1>
+                  </div>
+                  <h4 class="primary-color text-capitalize">CEO and director</h4>
+
+                </div>
+
+
+                 <div class="card-footer team-icons d-flex justify-content-between">
+                   <a href=""><i class="fa fa-facebook" style="font-size: 20px;"></i></a>
+                   <a href=""><i class="fa fa-instagram" style="font-size:20px ;"></i></a>
+                   <a href=""><i class="fa fa-yelp" style="font-size:20px ;"></i></a>
+
+
+                 </div>
+              </div>
+
+
+
+           </div>
+ 
+
+
+
+       <div class="col-9 col-sm-6 col-lg-4 mx-auto my-4">
+              <div class="card">
+                <img src="abhishek.jpeg" class="card-img-top" alt="">
+                <div class="card-body">
+                  <div class="card-title">
+                    <h1 class="text-capitalize">Abhishek Gautam</h1>
+                  </div>
+                  <h4 class="primary-color text-capitalize">Director(Public Relations)</h4>
+
+                </div>
+
+
+                 <div class="card-footer team-icons d-flex justify-content-between">
+                   <a href=""><i class="fa fa-facebook" style="font-size: 20px;"></i></a>
+                   <a href=""><i class="fa fa-instagram" style="font-size:20px ;"></i></a>
+                   <a href=""><i class="fa fa-yelp" style="font-size:20px ;"></i></a>
+
+
+                 </div>
+              </div>
+
+
+
+           </div>
+
+
+
+
+
+
+     <div class="col-9 col-sm-6 col-lg-4 mx-auto my-4">
+              <div class="card">
+                <img src="piyush.jpeg" class="card-img-top" alt="">
+                <div class="card-body">
+                  <div class="card-title">
+                    <h1 class="text-capitalize">Piyush Kumar</h1>
+                  </div>
+                  <h4 class="primary-color text-capitalize">Director(Project Manager)</h4>
+
+                </div>
+
+
+                 <div class="card-footer team-icons d-flex justify-content-between">
+                   <a href=""><i class="fa fa-facebook" style="font-size: 20px;"></i></a>
+                   <a href=""><i class="fa fa-instagram" style="font-size:20px ;"></i></a>
+                   <a href=""><i class="fa fa-yelp" style="font-size:20px ;"></i></a>
+
+
+                 </div>
+              </div>
+
+
+
+           </div>
+
+
+
+
+         </div>
+       </div>
+      </section>
+
+
+
+
+
+      <div class="container-fluid info p-3" id="top-icons">
+    <div class="row">
+      <div class="col d-flex justify-content-between align-items-baseline flex-wrap">
+        <div class="info-icons p-2">
+          <a href="#" class="mr-2 primary-color"><i class="fa fa-facebook" style="font-size: 25px;"></i></a>
+          <a href="#" class="mr-2 primary-color"><i class="fa fa-twitter"  style="font-size: 25px;"></i></a>
+          <a href="#" class="mr-2 primary-color"><i class="fa fa-instagram"  style="font-size: 25px;"></i></a>
+          <a href="#" class="mr-2 primary-color"><i class="fa fa-yelp"  style="font-size: 25px;"></i></a>
+        </div>
+        <h2 class="primary-color p-2 text-uppercase">&copy;Copyright 2019</h2>
+      </div>
+    </div>
+
+  </div>
+
+    <a href="#top-icons" class="" id="back-to-top"><button class="primary-color scrollTop">Scroll Up</button></a>
+
+
+
+
+      <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+      <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+      
+      <script type="text/javascript" src="js/jquery.ripples-min.js"></script>
+      <script type="text/javascript" src="jquery.magnific-popup.js"></script>
+       <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
